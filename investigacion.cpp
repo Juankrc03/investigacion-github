@@ -4,8 +4,6 @@ using namespace std;
 // Prototipos de funciones
 int sumar(int a, int b);
 int restar(int a, int b);
-int multiplicar(int a, int b);
-float dividir(int a, int b);
 
 int main() {
     int opcion, num1, num2;
@@ -30,18 +28,7 @@ int main() {
         case 2:
             cout << "Resultado: " << restar(num1, num2) << endl;
             break;
-        case 3:
-            cout << "Resultado: " << multiplicar(num1, num2) << endl;
-            break;
-        case 4:
-            if (num2 != 0) {
-                cout << "Resultado: " << dividir(num1, num2) << endl;
-            } else {
-                cout << "Error: No se puede dividir entre cero." << endl;
-            }
-            break;
-        default:
-            cout << "Opción inválida." << endl;
+            
     }
     
     return 0;
@@ -56,10 +43,3 @@ int restar(int a, int b) {
     return a - b;
 }
 
-int multiplicar(int a, int b) {
-    return a * b;
-}
-
-float dividir(int a, int b) {
-    return (float)a / b;
-}
